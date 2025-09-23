@@ -1,0 +1,27 @@
+/* styles.css */
+
+body {
+  font-size: 18px; /* Default is usually 20px */
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-image: url('assets/ssp.png'); /* Replace with your actual image path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed; /* Optional for parallax effect */
+  color: #fff; /* Optional: ensures text is readable on dark backgrounds */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.5); /* Optional: adds a dark overlay for contrast */
+  border-radius: 12px;
+}
+
