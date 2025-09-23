@@ -1,0 +1,6 @@
+"homepage": "https://Javier2020.github.io/stacksaver-landing",
+"scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
+}
+
