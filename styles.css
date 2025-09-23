@@ -1,17 +1,20 @@
 /* styles.css */
 
 body {
-  font-size: 18px; /* Default is usually 20px */
+  font-size: 18px;
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
-  background-image: url('assets/ssp.png'); /* Replace with your actual image path */
+  font-family: 'Montserrat', sans-serif;
+  background-image: url('assets/ssp.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-attachment: fixed; /* Optional for parallax effect */
-  color: #fff; /* Optional: ensures text is readable on dark backgrounds */
+  background-attachment: fixed;
+  color: #fff;
 }
+
+/* Import Montserrat font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
 .container {
   display: flex;
@@ -21,7 +24,86 @@ body {
   min-height: 100vh;
   text-align: center;
   padding: 2rem;
-  background-color: rgba(0, 0, 0, 0.5); /* Optional: adds a dark overlay for contrast */
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 12px;
 }
+
+.logo img {
+  max-width: 200px;
+  margin-bottom: 1.5rem;
+}
+.tagline {
+  font-size: clamp(3rem, 8vw, 5rem); /* Bigger and more responsive */
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 2rem;
+  color: #FFD700;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+}
+
+.email-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.email-form input[type="email"] {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.email-form button {
+  padding: 0.75rem;
+  background-color: #FFD700;
+  color: #000;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.email-form button:hover {
+  background-color: #e6c200;
+}
+
+/* Optional spinner styling */
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #ccc;
+  border-top-color: #FFD700;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-top: 2rem;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+
+  @media (max-width: 600px) {
+  .tagline {
+    font-size: 2.5rem;
+    letter-spacing: 0.5px;
+  }
+
+  .email-form input[type="email"],
+  .email-form button {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+
+  .logo img {
+    max-width: 150px;
+  }
+}
+
 
