@@ -92,5 +92,27 @@ body {
     max-width: 150px;
   }
 
+/* ============================
+   StackSaver Deal Card Styles
+   ============================ */
 
+.deal-card {
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin: 12px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.deal-card img {
+  width: 100%;
+  max-height: 150px;
+  object-fit: contain;
+}
+
+.policy {
+  font-size: 0.85em;
+  color: #555;
+}
 
